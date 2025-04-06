@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Movie Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="./scripts/aos_animation.js"></script>
+
+    <link href="./stylesheets/libary.css" rel="stylesheet">
+    <link href="./stylesheets/nav.css" rel="stylesheet">
+    <link href="./stylesheets/movies.css" rel="stylesheet">
+    <link href="./stylesheets/button.css" rel="stylesheet">
+
+    <script src="./scripts/button.js"></script>
+    <script src="./scripts/movies-data.js"></script>
+    <script src="./scripts/movies.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ghibli-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./media/logo2.png" alt="Studio Ghibli Logo" class="navbar-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="nav-content">
+                        <div class="nav-item">
+                            <a class="nav-link" href="./index.html#ghibli-nav">Ghibli</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="./index.html#hayao-nav">Miyazaki</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="./index.html#music-nav">Music</a>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Locations</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./index.html#museum-nav">Ghibli Museum</a>
+                                <a class="dropdown-item" href="./index.html#park-nav">Ghibli Park</a>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="./index.html#movies-nav">Movies</a>
+                        </div>
+                        <div class="nav-item contact-right">
+                            <a class="nav-link" href="./contact.html#ghibli-form">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="movie-container">
+            <div class="trailer-container">
+                <video id="trailerVideo" class="trailer-video" playsinline muted autoplay loop>
+                    <source src="video.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                    Your browser does not support the video tag.
+                </video>
+                <div class="trailer-overlay" id="trailerOverlay">
+                    <div class="trailer-info">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                        <div class="trailer-text">
+                            <h2>Trailer of the movie</h2>
+                            <p>CLICK TO PLAY WITH SOUND</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="split-bar"></div>
+            <div class="site-content">
+                <div class="movie-info">
+                    <div class="movie-header">
+                        <img id="moviePoster" src="img.jpg" alt="Movie poster" class="poster-container">
+                        <div class="movie-details">
+                            <h1 class="movie-title" id="movieTitle">Movie Title</h1>
+                            <div class="under-caption movie-year-length" id="movieYearLength"></div>
+                            <div class="under-caption movie-genre" id="movieGenre"></div>
+                            <p class="movie-description" id="movieDescription"></p>
+                            <div class="movie-meta">
+                                <div class="meta-item">
+                                    <span class="meta-label">Themes:</span>
+                                    <span id="movieThemes"></span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Director:</span>
+                                    <span id="movieDirector"></span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Studio:</span>
+                                    <span id="movieStudio"></span>
+                                </div>
+                            </div>
+                            <div class="ratings">
+                                <div class="rating-item">
+                                    <span class="rating-label">Awards:</span>
+                                    <span id="movieAwards"></span>
+                                </div>
+                                <div class="rating-item">
+                                    <span class="rating-label">Rotten Tomatoes:</span>
+                                    <span id="rottenTomatoes"></span>
+                                </div>
+                                <div class="rating-item">
+                                    <span class="rating-label">IMDb:</span>
+                                    <span id="imdbRating"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevBtn">Previous</button>
+                <button class="nav-btn" id="nextBtn">Next</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <p class="footer-content">
+        <span class="footer-item">Made by: Dragon Dominik</span>
+        <a href="./index.html"><img src="./media/logo2.png" alt="Studio Ghibli Logo" class="footer-logo"></a>
+        <a href="mailto:dragondominik0103@gmail.com" class="footer-item">dragondominik0103@gmail.com</a>
+      </p>
+    </footer>
+</body>
+</html>

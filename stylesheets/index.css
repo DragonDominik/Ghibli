@@ -1,0 +1,305 @@
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: white;
+}
+
+/* Carousel control arrows styling */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 8%;
+}
+
+.carousel-control-prev {
+  left: -2%;
+}
+
+.carousel-control-next {
+  right: -2%;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* Carousel item styling */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.carousel-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-family: 'Krub';
+  font-size: 1rem;
+}
+
+.content-banner {
+  background-color: var(--light-green);
+  width: 100%;
+  margin-top: 3rem;
+  padding: 5rem 14rem;
+}
+
+#hayao-picture {
+  float: left;
+  border: solid 0.5rem;
+  width: 26%;
+  margin: 0 2rem 0 0;
+}
+
+#museum-map {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#park-map {
+  float: right;
+  border: solid 0.5rem;
+  width: 48%;
+  margin: 0 0 0 2rem;
+}
+
+@media (max-width: 990px) {
+  .content-banner {
+    padding: 1.5rem;
+  }
+
+  #hayao-picture {
+    float: none;
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+
+  #museum-map {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #park-map {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+#movie-selection {
+  background-color: var(--light-cadet);
+  padding: 2rem;
+  width: 100%;
+}
+
+.movie-slider-container {
+  position: relative;
+  max-width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.movie-slider {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 1em 0;
+  margin: 15px 10px;
+}
+
+
+#movieSlider .movie-item:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.movie-poster {
+  width: auto;
+  height: 18em;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  z-index: 20;
+  transition: background-color 0.3s;
+}
+
+.slider-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.slider-arrow.prev {
+  left: 0px;
+}
+
+.slider-arrow.next {
+  right: 0px;
+}
+
+@media (max-width: 768px) {
+  .movie-poster {
+    height: 30vw;
+  }
+
+  .slider-arrow {
+    top: 40%;
+  }
+}
+
+#click-cover {
+  color: var(--light-cream);
+}
+
+@media (max-width: 990px) {
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 100;
+    width: 8%;
+  }
+
+
+
+  .carousel-indicators [data-bs-target] {
+    display: none;
+  }
+
+  .carousel-indicators .active {
+    display: none;
+  }
+}
+/* Ghibli Button Styles */
+.ghibli-btn-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.ghibli-btn {
+  display: inline-block;
+  position: relative;
+  background-color: var(--light-brown);
+  color: var(--light-cream);
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(166, 124, 82, 0.3);
+  z-index: 1;
+  font-family: 'Krub', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.ghibli-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(166, 124, 82, 0.4);
+  color: var(--light-beige);
+  background-color: var(--light-black);
+}
+
+.ghibli-btn:active {
+  transform: translateY(0);
+  background-color: var(--light-green);
+}
+
+/* Leaf decorations */
+.ghibli-leaf {
+  position: absolute;
+  color: var(--light-green);
+  font-size: 1rem;
+  opacity: 0.8;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.ghibli-leaf-1 {
+  top: 8px;
+  left: 20px;
+  transform: rotate(-15deg);
+}
+
+.ghibli-leaf-2 {
+  bottom: 8px;
+  right: 20px;
+  transform: rotate(25deg);
+}
+
+.ghibli-leaf-3 {
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%) rotate(-5deg);
+  font-size: 0.9rem;
+}
+
+.ghibli-btn:hover .ghibli-leaf {
+  opacity: 1;
+  animation: leafFloat 2s infinite ease-in-out;
+}
+
+.ghibli-btn:hover .ghibli-leaf-1 {
+  animation-delay: 0.1s;
+}
+
+.ghibli-btn:hover .ghibli-leaf-2 {
+  animation-delay: 0.2s;
+}
+
+.ghibli-btn:hover .ghibli-leaf-3 {
+  animation-delay: 0.3s;
+}
+
+/* Leaf floating animation */
+@keyframes leafFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(5deg);
+  }
+}

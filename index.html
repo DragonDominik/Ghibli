@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Ghibli</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="./scripts/aos_animation.js"></script>
+    <script src="./scripts/movie-slider.js"></script>
+
+    <link href="./stylesheets/libary.css" rel="stylesheet">
+    <link href="./stylesheets/default.css" rel="stylesheet">
+    <link href="./stylesheets/nav.css" rel="stylesheet">
+    <link href="./stylesheets/index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ghibli-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./media/logo2.png" alt="Studio Ghibli Logo" class="navbar-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="nav-content">
+                        <div class="nav-item">
+                            <a class="nav-link" href="#ghibli-nav">Ghibli</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#hayao-nav">Miyazaki</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#music-nav">Music</a>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Locations</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#museum-nav">Ghibli Museum</a>
+                                <a class="dropdown-item" href="#park-nav">Ghibli Park</a>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#movies-nav">Movies</a>
+                        </div>
+                        <div class="nav-item contact-right">
+                            <a class="nav-link" href="./contact.html#ghibli-form">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <a href="./movies.html?movie=spirited-away" class="carousel-link">
+                        <img src="./media/spirited_away_poster.png" alt="Spirited Away" class="d-block w-100">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <a href="./movies.html?movie=howl's-moving-castle" class="carousel-link">
+                        <img src="./media/howl_poster.png" alt="Howl's Moving Castle" class="d-block w-100">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <a href="movies.html?movie=my-neighbor-totoro" class="carousel-link">
+                        <img src="./media/totoro_poster.png" alt="My Neighbor Totoro" class="d-block w-100">
+                    </a>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+        <span class="nav-span" id="ghibli-nav"></span>
+        <div class="site-content">
+            <h1 id="ghibli-h1">What is Studio Ghibli?</h1>
+            <p>Studio Ghibli is a Japanese animation studio founded in 1985 by Hayao Miyazaki, Isao
+                Takahata, and producer Toshio Suzuki. The studio has produced <b>over 20 feature films</b>, each known
+                for
+                its breathtaking animation, rich storytelling, and deeply emotional themes. Unlike traditional animated
+                films, Studio Ghibli's works focus on hand-drawn artistry, immersive worlds, and complex characters that
+                resonate with audiences of all ages.</p>
+            <p>What makes Ghibli films stand out from typical animated movies is their <b>attention to
+                    detail, unique storytelling, and emotional depth</b>. Rather than relying on fast-paced action or
+                exaggerated humor, Ghibli movies take their time, allowing the story to unfold slowly and thoughtfully.
+                The
+                pacing is deliberate, with long, quiet moments that let the audience fully experience the world. Instead
+                of
+                rushing through events, Ghibli films focus on small, intimate details like a character walking through a
+                forest or watching the rain—that create a strong sense of atmosphere and realism. This slower pace
+                allows
+                the themes of nature, identity, personal growth, and the human-environment relationship to be explored
+                in a
+                more reflective, meaningful way.</p>
+            <p>Another defining feature of Studio Ghibli's films is their <b>lack of clear
+                    villains</b>—instead of simple good-versus-evil narratives, they present morally complex characters
+                and
+                situations. This makes the stories more relatable and thought-provoking, allowing audiences to see
+                different
+                perspectives.</p>
+            <p>With globally acclaimed masterpieces like <i>My Neighbor Totoro</i>, <i>Spirited Away</i>,
+                and <i>Howl's Moving Castle</i>, Studio Ghibli has become one of the most respected and beloved
+                animation
+                studios in the world, inspiring generations of filmmakers and audiences alike.</p>
+        </div>
+
+        <span class="nav-span" id="hayao-nav"></span>
+        <div class="site-content">
+            <h1 id="hayao-h1">Who is Hayao Miyazaki?</h1>
+            <img src="./media/miyazaki.jpg" alt="Picture of Hayao Miyazaki" id="hayao-picture">
+            <p>Hayao Miyazaki, the creative genius behind Studio Ghibli, is one of the most influential
+                filmmakers in animation history. As the co-founder of the studio, he has directed some of the most
+                celebrated animated films of all time, including <i>Spirited Away</i>, <i>Princess Mononoke</i>, and
+                <i>My
+                    Neighbor Totoro</i>. Miyazaki's films are known for their <b>imaginative worlds</b>, <b>strong</b>,
+                <b>complex characters</b>, and <b>rich emotional narratives</b>.
+            </p>
+            <p>What sets Miyazaki apart is his unique ability to blend <b>fantasy</b> with <b>real-world
+                    issues</b>, such as <b>environmentalism</b>, <b>war</b>, and <b>personal growth</b>. His films often
+                feature <b>strong female protagonists</b>, deep explorations of identity, and a strong focus on nature
+                and
+                humanity's relationship to the earth. Miyazaki's approach to storytelling is more reflective and patient
+                than many of his contemporaries, using slow pacing and detailed animation to create fully immersive
+                experiences.</p>
+            <p>Beyond his films, Miyazaki is known for his <b>hands-on approach</b> and
+                <b>perfectionism</b>, often taking years to complete each project to his exacting standards. His
+                commitment
+                to traditional animation, in an increasingly digital world, has had a profound impact on the animation
+                industry, inspiring generations of filmmakers around the world. His legacy as a filmmaker and
+                storyteller
+                continues to influence the landscape of animation today.
+            </p>
+            <p>He is famous for his <b>obsessive attention to detail</b> and his <b>perfectionist
+                    nature</b>. He has been known to personally inspect <b>every frame</b> of his films, sometimes even
+                reworking entire scenes until they meet his high standards.</p>
+            <p>Miyazaki announced his retirement <b>multiple times</b> throughout his career, but each
+                time, he would return to work on new projects. In fact, he is currently working on a new film titled
+                <i>How
+                    Do You Live?</i>, based on a 1937 Japanese novel, showing his unwavering passion for filmmaking.
+            </p>
+        </div>
+
+        <span class="nav-span" id="music-nav"></span>
+        <div class="site-content">
+            <h1 id="music-h1">The Magical Sounds of Ghibli</h1>
+            <p>The music of Studio Ghibli films is just as iconic as their breathtaking animation and
+                storytelling. Composed by the legendary <b>Joe Hisaishi</b>, the soundtracks are not just background
+                melodies but are an <b>integral part</b> of the storytelling, often driving the emotional depth and
+                atmosphere of the films. The music captures the essence of Ghibli's slow-paced, thoughtful narratives,
+                enhancing the sense of wonder, melancholy, and nostalgia that permeates many of the studio's works.</p>
+            <p>One of the most striking features of Ghibli music is its blend of different musical
+                genres. Hisaishi effortlessly combines elements of <b>classical music</b>, <b>contemporary orchestral
+                    arrangements</b>, and <b>Japanese traditional instruments</b>. This fusion creates a distinct sound
+                that
+                perfectly complements the worlds Ghibli films inhabit. From the rich, symphonic scores of <i>Spirited
+                    Away</i> to the folk-inspired tunes of <i>Princess Mononoke</i>, each film's score feels <b>uniquely
+                    tailored</b> to its narrative and themes.</p>
+            <p>Music in Ghibli films often transcends simple melody; it becomes a <b>character
+                    itself</b>, <b>guiding</b> the audience through emotional peaks and valleys. In films like <i>Howl's
+                    Moving Castle</i>, the score provides an emotional compass for the audience, amplifying moments of
+                <b>hope</b>, <b>sorrow</b>, and <b>awe</b>. The use of softer, quieter moments in the score mirrors the
+                slower pacing of the films, allowing the audience to deeply connect with the characters' inner worlds.
+            </p>
+            <p>In contrast, films like <i>Kiki's Delivery Service</i> feature more <b>light-hearted</b>
+                and <b>playful</b> music that conveys the <b>joy</b> and <b>freedom</b> of the protagonist's journey.
+                Each
+                soundtrack adapts to the tone and pace of its respective film, further enhancing the immersive
+                experience
+                that Ghibli films are known for.</p>
+            <p>The influence of Ghibli's music <b>extends far beyond the cinema screen</b>. <b>Live
+                    concerts</b>, featuring the music of <b>Joe Hisaishi</b>, are held worldwide, offering fans a chance
+                to
+                experience the magic of the Ghibli soundtracks in person. These performances often include symphonies
+                that
+                perform the iconic scores of films like <i>Howl's Moving Castle</i> and <i>Spirited Away</i>, creating a
+                <b>deeply emotional</b> experience that transports audiences back to the enchanted worlds of their
+                favorite
+                Ghibli films.
+            </p>
+        </div>
+
+        <div>
+            <div class="content-banner" id="spotify-banner">
+                <figure>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/27LY6G7bsqEbxHTcdq7Ubi?utm_source=generator"
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                    <figcaption>Collection of Ghibli Sountracks</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="site-content">
+            <h1 id="location-h1">Locations</h1>
+        </div>
+
+        <span class="nav-span" id="museum-nav"></span>
+        <div class="site-content">
+            <h2 id="museum-h2">Ghibli Museum</h2>
+            <p>The Studio Ghibli Museum, located in <b>Mitaka</b>, Japan, is a must-visit for fans of the
+                studio and animation lovers alike. Opened in 2001, the museum offers a unique and immersive experience
+                that
+                allows visitors to step inside the enchanting world of Ghibli films.</p>
+            <p>The museum is designed to capture the magic of Studio Ghibli's films, with exhibits
+                showcasing the studio's <b>artistic process</b>, <b>stunning animation</b>, and <b>memorable
+                    characters</b>.
+                Visitors can explore displays that feature original sketches, storyboards, and models from iconic Ghibli
+                movies like <i>My Neighbor Totoro</i>, <i>Spirited Away</i>, <i>Howl's Moving Castle</i>, and many more.
+                It's not just a place to look at art—many of the exhibits are interactive, allowing visitors to feel
+                like
+                they are part of the magical worlds created by Hayao Miyazaki and his team.</p>
+        </div>
+
+        <div>
+            <div class="content-banner" id="museum-map-banner">
+                <figure>
+                    <img src="./media/museum_map.png" alt="Map of the Museum" id="museum-map">
+                    <figcaption>Map of the museum</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="site-content">
+            <h3>The Theater</h3>
+            <p>One of the most magical features of the <b>Studio Ghibli Museum</b> is its <b>theater</b>,
+                where visitors can enjoy a special selection of short films created exclusively for the museum. Unlike
+                typical movie theaters, this theater offers a truly unique cinematic experience that can only be found
+                within the museum walls.</p>
+            <p>The Ghibli Museum Theatre showcases films that cannot be seen anywhere else. These
+                original short films are created by the Ghibli team, often directed by <b>Hayao Miyazaki</b> himself,
+                and
+                are designed to enhance the museum experience. The films, typically around <b>15-20 minutes</b> long,
+                feature the same hand-drawn animation, rich storytelling, and charming characters that Ghibli fans have
+                come
+                to love. Some of the films are inspired by characters from well-known Ghibli films, while others are
+                entirely original.</p>
+        </div>
+
+        <span class="nav-span" id="park-nav"></span>
+        <div class="site-content">
+            <h2 id="park-h2">Ghibli Park (Aichi Prefecture)</h2>
+            <img src="./media/park_map_tr.png" alt="Map of the park" id="park-map">
+            <p>Opened in <b>November 2022</b>, <b>Ghibli Park</b> is an immersive theme park located in
+                <b>Aichi Prefecture</b>, Japan, within the <b>Aichi Expo Memorial Park</b>. The park brings the magical
+                worlds of Studio Ghibli's most beloved films to life, offering fans a chance to experience the
+                enchanting
+                settings firsthand.
+            </p>
+            <p>Rather than traditional amusement park rides, <b>Ghibli Park</b> focuses on creating
+                detailed, visually stunning environments that faithfully recreate scenes from films like <i>My Neighbor
+                    Totoro</i>, <i>Spirited Away</i>, and <i>Howl's Moving Castle</i>. The park features multiple themed
+                areas, such as a life-size replica of the Catbus from <i>Totoro</i> and a recreation of the bathhouse
+                from
+                <i>Spirited Away</i>. Each area allows visitors to step into the films' vibrant worlds, evoking a sense
+                of
+                nostalgia and wonder.
+            </p>
+            <p>While the park does not feature fast rides or large-scale attractions, it excels at
+                providing an immersive, slow-paced experience where visitors can enjoy the beauty of Ghibli's artistry
+                and
+                storylines. The emphasis is on exploration, interaction, and enjoying the small, magical moments that
+                characterize Ghibli films.</p>
+            <p>Ghibli Park is a must-visit for any fan of the studio's films, offering an unforgettable
+                opportunity to walk through the worlds of Studio Ghibli.</p>
+        </div>
+
+        <span class="nav-span" id="movies-nav"></span>
+        <div class="site-content">
+            <h1 id="movies-h1">Movies</h1>
+        </div>
+
+        <div id="movie-selection">
+            <figure>
+                <div class="movie-slider-container">
+                    <button class="slider-arrow prev" id="prevBtn">&#10094;</button>
+                    <div class="movie-slider" id="movieSlider">
+                        <a href="./movies.html?movie=spirited-away" class="movie-item" data-title="Spirited Away">
+                            <img src="./media/Movies/spirited_away.jpg" alt="Spirited Away" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=princess-mononoke" class="movie-item"
+                            data-title="Princess Mononoke">
+                            <img src="./media/Movies/princess_mononoke.jpg" alt="Princess Mononoke"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=my-neighbor-totoro" class="movie-item"
+                            data-title="My Neighbor Totoro">
+                            <img src="./media/Movies/my_neighbor_totoro.jpg" alt="My Neighbor Totoro"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=howl's-moving-castle" class="movie-item"
+                            data-title="Howl's Moving Castle">
+                            <img src="./media/Movies/howl_moving_castle.jpg" alt="Howl's Moving Castle"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=ponyo" class="movie-item" data-title="Ponyo">
+                            <img src="./media/Movies/ponyo.jpg" alt="Ponyo" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=the-boy-and-the-heron" class="movie-item"
+                            data-title="The Boy and the Heron">
+                            <img src="./media/Movies/the_boy_and_the_heron.jpg" alt="The Boy and the Heron"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=castle-in-the-sky" class="movie-item"
+                            data-title="Castle in the Sky">
+                            <img src="./media/Movies/castle_in_the_sky.jpg" alt="Castle in the Sky"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=nausicaa-of-the-valley-of-the-wind" class="movie-item"
+                            data-title="Nausicaä of the Valley of the Wind">
+                            <img src="./media/Movies/nausicaa.jpg" alt="Nausicaä of the Valley of the Wind"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=kiki's-delivery-service" class="movie-item"
+                            data-title="Kiki's Delivery Service">
+                            <img src="./media/Movies/kiki_delivery_service.jpg" alt="Kiki's Delivery Service"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=porco-rosso" class="movie-item" data-title="Porco Rosso">
+                            <img src="./media/Movies/porco_rosso.jpg" alt="Porco Rosso" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=the-wind-rises" class="movie-item" data-title="The Wind Rises">
+                            <img src="./media/Movies/the_wind_rises.jpg" alt="The Wind Rises" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=the-secret-world-of-arrietty" class="movie-item"
+                            data-title="The Secret World of Arrietty">
+                            <img src="./media/Movies/the_secret_world_of_arrietty.jpg"
+                                alt="The Secret World of Arrietty" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=grave-of-the-fireflies" class="movie-item"
+                            data-title="Grave of the Fireflies">
+                            <img src="./media/Movies/grave_of_the_fireflies.jpg" alt="Grave of the Fireflies"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=the-tale-of-the-princess-kaguya" class="movie-item"
+                            data-title="The Tale of the Princess Kaguya">
+                            <img src="./media/Movies/the_tale_of_the_princess_kaguya.jpg"
+                                alt="The Tale of the Princess Kaguya" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=when-marnie-was-there" class="movie-item"
+                            data-title="When Marnie Was There">
+                            <img src="./media/Movies/when_marnie_was_there.jpg" alt="When Marnie Was There"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=only-yesterday" class="movie-item" data-title="Only Yesterday">
+                            <img src="./media/Movies/only_yesterday.jpg" alt="Only Yesterday" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=whisper-of-the-heart" class="movie-item"
+                            data-title="Whisper of the Heart">
+                            <img src="./media/Movies/whisper_of_the_heart.jpg" alt="Whisper of the Heart"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=from-up-on-poppy-hill" class="movie-item"
+                            data-title="From Up on Poppy Hill">
+                            <img src="./media/Movies/from_up_on_poppy_hill.jpg" alt="From Up on Poppy Hill"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=pom-poko" class="movie-item" data-title="Pom Poko">
+                            <img src="./media/Movies/pom_poko.jpg" alt="Pom Poko" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=my-neighbors-the-yamadas" class="movie-item"
+                            data-title="My Neighbors the Yamadas">
+                            <img src="./media/Movies/my_neighbors_the_yamadas.jpg" alt="My Neighbors the Yamadas"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=the-cat-returns" class="movie-item" data-title="The Cat Returns">
+                            <img src="./media/Movies/the_cat_returns.jpg" alt="The Cat Returns" class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=tales-from-earthsea" class="movie-item"
+                            data-title="Tales from Earthsea">
+                            <img src="./media/Movies/tales_from_earthsea.jpg" alt="Tales from Earthsea"
+                                class="movie-poster">
+                        </a>
+                        <a href="./movies.html?movie=ocean-waves" class="movie-item" data-title="Ocean Waves">
+                            <img src="./media/Movies/ocean_waves.jpg" alt="Ocean Waves" class="movie-poster">
+                        </a>
+                    </div>
+                    <button class="slider-arrow next" id="nextBtn">&#10095;</button>
+                </div>
+                <figcaption id="click-cover">Click the cover for more information</figcaption>
+            </figure>
+        </div>
+
+        <span class="nav-span" id="contact-nav"></span>
+        <div class="site-content">
+            <h1 id="contact-h1">Contact us</h1>
+            <p>Tell us about your experiences with the world of Ghibli. What is your favorite movie, or
+                character?</p>
+                <div class="ghibli-btn-container">
+                    <button onclick="window.location.href='./contact.html#ghibli-form'" class="ghibli-btn ghibli-btn-animate position-relative" href="./contact.html#ghibli-form">
+                      <i class="ghibli-leaf ghibli-leaf-1 fas fa-leaf"></i>
+                      <i class="ghibli-leaf ghibli-leaf-3 fas fa-leaf"></i>
+                      Click Here
+                      <i class="ghibli-leaf ghibli-leaf-2 fas fa-leaf"></i>
+                    </button>
+                  </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-content">
+            <span class="footer-item">Made by: Dragon Dominik</span>
+            <a href="./index.html"><img src="./media/logo2.png" alt="Studio Ghibli Logo" class="footer-logo"></a>
+            <a href="mailto:dragondominik0103@gmail.com" class="footer-item">dragondominik0103@gmail.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>
