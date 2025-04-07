@@ -201,16 +201,19 @@ footer a:hover {
 
     .footer-item {
         flex: 0 0 auto;
-        padding: 0 2rem;
+        padding: 0 0rem;
+        font-size: 0.8rem;
         text-align: center;
     }
 
     .footer-item:first-child {
         margin-right: auto;
+        margin-left: 1rem;
     }
 
     .footer-item:last-child {
         margin-left: auto;
+        margin-right: 1rem;
     }
 }
 
