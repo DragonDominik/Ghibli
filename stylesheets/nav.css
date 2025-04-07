@@ -1,16 +1,17 @@
-:root, html, body {
+:root,
+html,
+body {
     scroll-behavior: smooth;
     scroll-padding-top: 6em;
-    overflow-x: hidden;
     max-width: 100%;
 }
 
 body {
-    overflow-x: hidden;
     max-width: 100%;
 }
 
-.ghibli-navbar, footer {
+.ghibli-navbar,
+footer {
     background-color: var(--light-brown);
     font-family: 'Koulen', sans-serif;
     padding: 0.625em 0;
@@ -89,30 +90,25 @@ body {
 }
 
 @media (max-width: 990px) {
-    .ghibli-navbar {
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-    
     .ghibli-navbar .container-fluid {
         max-width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
-    
+
     .contact-right {
         margin-left: 0;
     }
-   
+
     .nav-content {
         flex-direction: column;
         align-items: flex-start;
     }
-   
+
     .nav-item {
         width: 100%;
     }
-   
+
     .dropdown-menu {
         width: 100%;
         background-color: var(--light-brown);
@@ -146,7 +142,6 @@ header {
     z-index: 9999;
     line-height: 1;
     background-color: var(--light-brown);
-    overflow-x: hidden;
 }
 
 main {
@@ -194,26 +189,26 @@ footer a:hover {
         font-size: 1em;
         padding: 1rem 0.5rem;
     }
-   
+
     .footer-logo {
         display: none;
     }
-   
+
     .footer-content {
         justify-content: center;
         gap: 0.5rem;
     }
-   
+
     .footer-item {
         flex: 0 0 auto;
         padding: 0 2rem;
         text-align: center;
     }
-   
+
     .footer-item:first-child {
         margin-right: auto;
     }
-   
+
     .footer-item:last-child {
         margin-left: auto;
     }
