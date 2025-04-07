@@ -1,0 +1,167 @@
+/* Button styling */
+.nav-btn {
+    position: relative;
+    padding: 0.5rem 2rem;
+    background-color: #25344f;
+    color: white;
+    border: 2px solid #3a4b6a;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Khand";
+    font-weight: bold;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 10px rgba(37, 52, 79, 0.3);
+    z-index: 1;
+    width: 10rem;
+}
+
+/* Button text content */
+.btn-text {
+    position: relative;
+    z-index: 3;
+}
+
+/* Hover effect for button */
+.nav-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(37, 52, 79, 0.4);
+    background-color: #30486c;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Glow layer behind the button */
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(150, 200, 255, 0.15), transparent 70%);
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    z-index: 2;
+}
+
+/* Glow appears on hover */
+.nav-btn:hover::before {
+    opacity: 1;
+}
+
+/* Button press animation */
+.nav-btn:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 5px 10px rgba(37, 52, 79, 0.3);
+}
+
+/* Overlay containers for firefly and sparkle effects */
+.firefly-container, .sparkle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Firefly appearance and animation */
+.firefly {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 180, 0.6);
+    box-shadow: 0 0 6px 1px rgba(255, 255, 150, 0.4);
+    opacity: 0;
+    z-index: 2;
+    animation: firefly-float 5s infinite ease-in-out;
+    transition: all 1.5s ease;
+}
+
+/* Fireflies glow more when hovered */
+.nav-btn:hover .firefly {
+    animation-duration: 3.5s !important;
+    box-shadow: 0 0 12px 4px rgba(255, 255, 180, 0.8);
+    transition: all 1.5s ease;
+}
+
+/* Ripple effect on click */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple 0.8s linear;
+    z-index: 2;
+}
+
+/* Sparkle effect styling */
+.sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: sparkle-fly var(--duration) forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 0 5px 2px rgba(255, 255, 180, 0.7);
+    z-index: 3;
+}
+
+/* Floating movement of fireflies */
+@keyframes firefly-float {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) translateX(0) scale(1);
+    }
+    10% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(-20px) translateX(15px) scale(0.8);
+    }
+    75% {
+        opacity: 0.6;
+        transform: translateY(-40px) translateX(-10px) scale(0.6);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-60px) translateX(5px) scale(0.3);
+    }
+}
+
+/* Ripple expansion animation */
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.8;
+        transform: scale(0);
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+/* Sparkle fly-away animation */
+@keyframes sparkle-fly {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: 
+            translate(
+                calc(-50% + cos(var(--angle)) * var(--distance)),
+                calc(-50% + sin(var(--angle)) * var(--distance))
+            )
+            scale(0.2);
+    }
+}

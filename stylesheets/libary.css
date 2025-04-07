@@ -1,0 +1,19 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub&display=swap');
+
+:root {
+    --light-cream: #FFF9F4;
+    --light-brown: #473737;
+    --light-blue: #406768;
+    --light-light-blue: #6FA9BB;
+    --light-green: #869658;
+    --light-black: #272421;
+    --light-cadet: #25344f;
+    --light-pewter: #4c5c7a;
+    --light-beige: #F2E7DD;
+    font-size: 16px;
+    font-family: "Krub";
+    color: var(--light-black);
+}
