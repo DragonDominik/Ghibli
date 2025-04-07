@@ -99,6 +99,9 @@ footer {
     .contact-right {
         margin-left: 0;
     }
+    .dropdown-item:hover {
+        background-color: var(--light-brown);
+    }
 
     .nav-content {
         flex-direction: column;
