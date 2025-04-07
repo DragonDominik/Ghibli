@@ -23,11 +23,11 @@
 }
 
 .carousel-control-prev {
-  left: -2%;
+  left: 0%;
 }
 
 .carousel-control-next {
-  right: -2%;
+  right: 0%;
 }
 
 .carousel:hover .carousel-control-prev,
