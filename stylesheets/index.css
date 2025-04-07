@@ -91,6 +91,16 @@ figcaption {
     padding: 1.5rem;
   }
 
+  
+.carousel-control-prev {
+  left: 5px;
+}
+
+.carousel-control-next {
+  right: 5px;
+}
+
+
   #hayao-picture {
     float: none;
     width: 100%;
